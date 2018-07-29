@@ -4,8 +4,76 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "content-hash": "ff23c138372db115b0828f96728ee34a",
     "packages": [
+        {
+            "name": "box/spout",
+            "version": "v2.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/box/spout.git",
+                "reference": "3681a3421a868ab9a65da156c554f756541f452b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/box/spout/zipball/3681a3421a868ab9a65da156c554f756541f452b",
+                "reference": "3681a3421a868ab9a65da156c554f756541f452b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xmlreader": "*",
+                "ext-zip": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.0"
+            },
+            "suggest": {
+                "ext-iconv": "To handle non UTF-8 CSV files (if \"php-intl\" is not already installed or is too limited)",
+                "ext-intl": "To handle non UTF-8 CSV files (if \"iconv\" is not already installed)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Box\\Spout\\": "src/Spout"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Adrien Loison",
+                    "email": "adrien@box.com"
+                }
+            ],
+            "description": "PHP Library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way",
+            "homepage": "https://www.github.com/box/spout",
+            "keywords": [
+                "OOXML",
+                "csv",
+                "excel",
+                "memory",
+                "odf",
+                "ods",
+                "office",
+                "open",
+                "php",
+                "read",
+                "scale",
+                "spreadsheet",
+                "stream",
+                "write",
+                "xlsx"
+            ],
+            "time": "2017-09-25T19:44:35+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -452,6 +520,162 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "laravel-enso/helpers",
+            "version": "1.7.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Helpers.git",
+                "reference": "e86e36a72af7ad5e0ab4cbc8cd39394693d15d21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Helpers/zipball/e86e36a72af7ad5e0ab4cbc8cd39394693d15d21",
+                "reference": "e86e36a72af7ad5e0ab4cbc8cd39394693d15d21",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "EnsoException": "LaravelEnso\\Helpers\\app\\Exceptions\\EnsoException"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Helpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Helper classes dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/Helpers",
+            "keywords": [
+                "helpers",
+                "laravel-enso"
+            ],
+            "time": "2018-07-10T06:38:59+00:00"
+        },
+        {
+            "name": "laravel-enso/vuecomponents",
+            "version": "2.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/VueComponents.git",
+                "reference": "4a842032e9cf1569bf91d0b05928002a9c81b419"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/VueComponents/zipball/4a842032e9cf1569bf91d0b05928002a9c81b419",
+                "reference": "4a842032e9cf1569bf91d0b05928002a9c81b419",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\VueComponents\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\VueComponents\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Enso Vue Components",
+            "homepage": "https://github.com/laravel-enso/VueComponents",
+            "keywords": [
+                "laravel-enso",
+                "vue-component",
+                "vue-components"
+            ],
+            "time": "2018-07-18T11:51:47+00:00"
+        },
+        {
+            "name": "laravel-enso/vuedatatable",
+            "version": "1.2.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/VueDatatable.git",
+                "reference": "acf825b0ba794c42d7ba502bf1be7d919a9c5d5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/VueDatatable/zipball/acf825b0ba794c42d7ba502bf1be7d919a9c5d5a",
+                "reference": "acf825b0ba794c42d7ba502bf1be7d919a9c5d5a",
+                "shasum": ""
+            },
+            "require": {
+                "box/spout": "2.7.*",
+                "laravel-enso/helpers": "1.7.*",
+                "laravel-enso/vuecomponents": "2.2.*",
+                "laravel/framework": "5.6.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\VueDatatable\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\VueDatatable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Data Table library with server-side processing and a VueJS component",
+            "homepage": "https://github.com/laravel-enso/VueDatatable",
+            "keywords": [
+                "data-table",
+                "data-table-server-side",
+                "datatable",
+                "laravel-enso"
+            ],
+            "time": "2018-07-26T06:30:44+00:00"
         },
         {
             "name": "laravel/framework",
