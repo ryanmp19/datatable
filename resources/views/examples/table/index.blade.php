@@ -10,7 +10,7 @@
     </head>
     <body>
         <div id="app"
-            {{-- v-cloak --}}>
+            v-cloak>
             <nav class="navbar has-bottom-top-large" role="navigation" aria-label="main navigation">
                 <div class="container">
                     <div class="navbar-brand">

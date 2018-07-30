@@ -12,11 +12,12 @@ let mix = require('laravel-mix');
  */
 
 mix
-	.js('resources/assets/js/app.js', 'public/js')
+	// .js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/tableExample.js', 'public/js')
     // .js('resources/assets/js/selectExample.js', 'public/js')
     // .js('resources/assets/js/enso.js', 'public/js')
  	.sourceMaps()
 
- 	.sass('resources/assets/sass/enso.scss', 'public/css')
-   	.sass('resources/assets/sass/app.scss', 'public/css');
+ 	.sass('resources/assets/sass/enso.scss', 'public/css');
+   	// .sass('resources/assets/sass/app.scss', 'public/css');
+   	// .sass('resources/assets/sass/themes/cerulean.scss', 'public/themes/cerulean/bulma.min.css');

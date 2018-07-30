@@ -25,33 +25,33 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(dirname(dirname(__DIR__)).'/config/enso/datatable.php', 'enso.datatable');
 
-        $this->loadViewsFrom(__DIR__.'/resources/views', 'laravel-enso/vuedatatable');
+        $this->loadViewsFrom(dirname(dirname(__DIR__)).'/resources/views', 'laravel-enso/vuedatatable');
     }
 
     private function publishesAll()
     {
         $this->publishes([
-            __DIR__.'/config' => config_path('enso'),
+            dirname(dirname(__DIR__)).'/config' => config_path('enso'),
         ], 'vuedatatable-config');
 
         $this->publishes([
-            __DIR__.'/resources/assets/js' => resource_path('assets/js'),
+            dirname(dirname(__DIR__)).'/resources/assets/js' => resource_path('assets/js'),
         ], 'vuedatatable-assets');
 
         $this->publishes([
-            __DIR__.'/resources/assets/js' => resource_path('assets/js'),
+            dirname(dirname(__DIR__)).'/resources/assets/js' => resource_path('assets/js'),
         ], 'enso-assets');
 
         $this->publishes([
-            __DIR__.'/app/Tables' => app_path('Tables'),
+            dirname(dirname(__DIR__)).'/app/Tables' => app_path('Tables'),
         ], 'tables');
 
         $this->publishes([
-            __DIR__.'/resources/views' => resource_path('views/vendor/laravel-enso/vuedatatable'),
+            dirname(dirname(__DIR__)).'/resources/views' => resource_path('views/vendor/laravel-enso/vuedatatable'),
         ], 'vuedatatable-mail');
 
         $this->publishes([
-            __DIR__.'/resources/views' => resource_path('views/vendor/laravel-enso/vuedatatable'),
+            dirname(dirname(__DIR__)).'/resources/views' => resource_path('views/vendor/laravel-enso/vuedatatable'),
         ], 'enso-mail');
     }
 

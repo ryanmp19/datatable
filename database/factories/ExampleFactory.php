@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -10,10 +9,8 @@
 | database. Just tell the factory how a default model should look.
 |
  */
-
 $factory->define(App\Example::class, function (Faker\Generator $faker) {
     $salary = $faker->numberBetween($min = 1100, $max = 5500);
-
     return [
         'name' => $faker->name,
         'position' => $faker->jobTitle,

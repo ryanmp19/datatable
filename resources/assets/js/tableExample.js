@@ -1,9 +1,22 @@
 import Vue from 'vue';
 import axios from 'axios';
-import fontawesome from '@fortawesome/fontawesome';
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import { faVuejs, faGithub } from '@fortawesome/fontawesome-free-brands/shakable.es';
-import { faCheck, faTimes } from '@fortawesome/fontawesome-free-solid/shakable.es';
+// import fontawesome from '@fortawesome/fontawesome';
+// import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
+// import { faVuejs, faGithub } from '@fortawesome/fontawesome-free-brands/shakable.es';
+// import { faCheck, faTimes } from '@fortawesome/fontawesome-free-solid/shakable.es';
+
+// fontawesome.library.add(faVuejs, faGithub, faCheck, faTimes);
+
+
+// upgrade way?
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faVuejs, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faCheck, faTimes, faVuejs, faGithub)
+
+
 // import store from './store';
 import VueTable from './components/enso/vuedatatable/VueTable.vue';
 import VueFilter from './components/enso/bulma/VueFilter.vue';
@@ -13,11 +26,11 @@ import DateIntervalFilter from './components/enso/bulma/DateIntervalFilter.vue';
 import Tabs from './components/enso/bulma/Tabs.vue';
 import Tab from './components/enso/bulma/Tab.vue';
 import Toastr from './components/enso/bulma/toastr';
-// import './modules/enso/directives/hljs';
+import './modules/enso/directives/hljs';
 
-// import './modules/enso/mixins/errorHandler';
+import './modules/enso/mixins/errorHandler';
 
-fontawesome.library.add(faVuejs, faGithub, faCheck, faTimes);
+
 
 Vue.component('fa', FontAwesomeIcon);
 
@@ -30,12 +43,13 @@ Vue.use(Toastr, {
 window.axios = axios;
 
 new Vue({
-    store,
+    //store,
 
     comments: true,
 
     components: {
-        VueTable, VueFilter, VueSelectFilter, IntervalFilter, DateIntervalFilter, Tabs, Tab,
+        // VueTable, VueFilter, VueSelectFilter, IntervalFilter, DateIntervalFilter, Tabs, Tab,
+        VueTable, VueFilter, IntervalFilter, DateIntervalFilter, Tabs, Tab,
     },
 
     data() {
